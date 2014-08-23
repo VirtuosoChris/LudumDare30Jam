@@ -12,7 +12,7 @@
 #include "Quad.h"
 #include "GPUMesh.h"
 #include "GameMap.h"
-
+#include "playSound.h"
 
 std::shared_ptr<GameMap> pMap;
 
@@ -109,6 +109,8 @@ int main(int argc,  char * argv[])
     const unsigned int windowHeight = 768;
     
     glutInit(&argc, argv);
+    
+    alutInit(&argc, argv);
     
     glutInitWindowSize(windowWidth, windowHeight);
     
